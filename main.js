@@ -22,7 +22,7 @@ $http.afterRequest = function () {
 }
 
 //封装showMsg()方法
-uni.$showNsg = function (title = '数据加载失败',duration = 1500){
+uni.$showMsg = function (title = '数据加载失败',duration = 1500){
   uni.showToast({
     title,
     duration,

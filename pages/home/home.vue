@@ -25,12 +25,12 @@
     <!-- 楼层图片区域 -->
     <view class="floor-img-box">
       <!-- 左侧大图片的盒子 -->
-      <navigator class="left-img-box">
+      <navigator class="left-img-box" :url="item.product_list[0].url">
         <image :src="item.product_list[0].image_src" :style="{width: item.product_list[0].image_width + 'rpx'}" mode="widthFix"></image>
       </navigator>
       <!-- 右侧 4 个小图片的盒子 -->
       <view class="right-img-box">
-        <navigator class="right-img-item" v-for="(item2, i2) in item.product_list" :key="i2" v-if="i2 !== 0">
+        <navigator class="right-img-item" v-for="(item2, i2) in item.product_list" :key="i2" v-if="i2 !== 0" :url="item2.url">
           <image :src="item2.image_src" mode="widthFix" :style="{width: item2.image_width + 'rpx'}"></image>
         </navigator>
       </view>
