@@ -1,6 +1,6 @@
 <template>
   <view>
-    
+    GoodList
   </view>
 </template>
 
